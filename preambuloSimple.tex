@@ -90,3 +90,37 @@
 
 \lstset{escapechar=@,style=customc}
 \usepackage{afterpage}
+
+
+\setcounter{secnumdepth}{5}
+
+\DeclareNewSectionCommand[
+	style=section,
+	counterwithin=subsubsection,
+	afterskip=1.5ex plus .2ex,
+	beforeskip=3.25ex plus 1ex minus .2ex,
+	afterindent=false,
+	level=\paragraphnumdepth,
+	tocindent=10em,
+	tocnumwidth=5em
+]{subsubsubsection}
+
+\setcounter{secnumdepth}{\subsubsubsectionnumdepth}
+\setcounter{tocdepth}{\subparagraphtocdepth}
+
+\RedeclareSectionCommands[
+	level=\numexpr\subsubsubsectionnumdepth+1\relax,
+	toclevel=\numexpr\subsubsubsectiontocdepth+1\relax,
+	increaselevel
+]{paragraph,subparagraph}
+
+\RedeclareSectionCommand[
+	counterwithin=subsubsubsection,
+	tocindent=12em,
+	tocnumwidth=6em
+]{paragraph}
+
+\RedeclareSectionCommand[
+	tocindent=14em,
+	tocnumwidth=7em
+]{subparagraph}

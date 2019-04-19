@@ -40,11 +40,19 @@
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
 	
+	%--------------------------------------
+	% PORTADA
+	%--------------------------------------
+	
 	\include{portada/portada}
 	
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
+	
+	%--------------------------------------
+	% PREFACIO ESP
+	%--------------------------------------
 	
 	\input{prefacios/prefacio}
 	
@@ -52,11 +60,19 @@
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
 	
+	%--------------------------------------
+	% PREFACIO ING
+	%--------------------------------------
+	
 	\input{prefacios/prefacio_ingles}
 	
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
+	
+	%--------------------------------------
+	% CONSENTIMIENTO
+	%--------------------------------------
 	
 	\input{prefacios/consentimiento}
 	
@@ -64,17 +80,29 @@
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
 	
+	%--------------------------------------
+	% FIRMA TUTOR
+	%--------------------------------------
+	
 	\input{prefacios/firma_tutor}
 	
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
 	
+	%--------------------------------------
+	% AGRADECIMIENTOS
+	%--------------------------------------
+	
 	\input{prefacios/agradecimientos}
 	
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
+	
+	%--------------------------------------
+	% INDICES
+	%--------------------------------------
 	
 	\tableofcontents % para generar el índice de contenidos
 	
@@ -84,51 +112,91 @@
 	
 	\newpage
 	
+	%--------------------------------------
+	% INTRODUCCION
+	%--------------------------------------
+	
 	\input{capitulos/01_Introduccion}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% ESPECIFICACION DE REQUISITOS
+	%--------------------------------------
+	
 	\input{capitulos/02_EspecificacionRequisitos}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% PLANIFICACION
+	%--------------------------------------
+	
 	\input{capitulos/03_Planificacion}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% ANALISIS
+	%--------------------------------------
+	
 	\input{capitulos/04_Analisis}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% DISENIO
+	%--------------------------------------
+	
 	\input{capitulos/05_Diseno}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% IMPLEMENTACION
+	%--------------------------------------
+	
 	\input{capitulos/06_Implementacion}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% PRUEBAS
+	%--------------------------------------
+	
 	\input{capitulos/07_Pruebas}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% ANALISIS DE NEGOCIO
+	%--------------------------------------
+	
 	\input{capitulos/08_Analisis_negocio}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% CONCLUSIONES Y FUTUROS
+	%--------------------------------------
+	
 	\input{capitulos/09_Conclusiones_y_futuros}
 	\thispagestyle{empty} 
 	\textcolor[rgb]{1.00,1.00,1.00}{.} 
 	\newpage %inserta un salto de página
-	%
+	
+	%--------------------------------------
+	% MANUAL DE USUARIO
+	%--------------------------------------
+	
 	\input{capitulos/10_Manual_usuario}
 	%
 	
@@ -136,33 +204,24 @@
 	%							BIBLIOGRAFIA
 	%-----------------------------------------------------------------------
 	
-	\begin{thebibliography}{9}
-		%----------------------------------------------	
-		\bibitem{lamport94}
-		Leslie Lamport,
-		\textit{\LaTeX: a document preparation system},
-		Addison Wesley, Massachusetts,
-		2nd edition,
-		1994.	
+	\begin{thebibliography}{99}
+		\bibitem{Baz} 
+		\textsc{Bazaraa, M.S., J.J. Jarvis}
+		\textit{Programacuib}.
+		\newline
+		\url{https://www.google.es}	
 	\end{thebibliography}
 
 	
-	% Referencia a bibliografia			En \cite{Baz}
-	% Referencia a figura				La figura (\ref{fig:1})
-	% Espacio entre lineas				\vspace{0.06in}
-	% Figura con comentario al pie
+	% \cite{Baz}
+	% \vspace{0.06in}
+
 	%\begin{figure}[htb]
 	%	\centering
 	%	\includegraphics[width=0.4\textwidth]{./imagenes/1}
 	%	\caption{Universidad de Granada.} \label{fig:1}
 	%\end{figure}
-	%\begin{thebibliography}{99}
-	%	\bibitem{Baz} 
-	%	\textsc{Bazaraa, M.S., J.J. Jarvis}
-	%	\textit{Programacuib}.
-	%	\newline
-	%	\url{https://www.google.es}	
-	%\end{thebibliography}
+
 
 	
 \end{document}
